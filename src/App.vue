@@ -27,8 +27,23 @@
     src: local("Stalker"),
     url("~@/fonts/stalker.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "gotham";
+    src: local("gotham"),
+    url("~@/fonts/gothampro.ttf") format("truetype");
+  }
   MainPage{
     height: 100%;
     width: 100%;
+  }
+  #app{
+    height: 100%;
+  }
+  body{
+    height: 100%;
+    margin: 0;
+  }
+  html{
+    height: 100%;
   }
 </style>

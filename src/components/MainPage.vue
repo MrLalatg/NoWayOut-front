@@ -1,32 +1,31 @@
 <template>
     <div id="main">
-        <p id="logo">TEST</p>
+        <Header id="header" />
+        <Center id="center"/>
+        <Footer id="footer" />
     </div>
 </template>
 
 <script>
+    import Header from "./Header";
+    import Center from "./Center";
+    import Footer from "./Footer";
     export default {
-        name: "MainPage"
+        name: "MainPage",
+        components: {
+          Center,
+          Header,
+          Footer
+        }
     }
 </script>
 
 <style scoped>
     #main {
+        height: 100%;
+        width: 100%;
         display: flex;
-    }
-    #logo {
-        font-family: Stalker, serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 150px;
-        line-height: 188px;
-
-
-
-        letter-spacing: 0.13em;
-
-        color: #FFFFFF;
-
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        flex-direction: column;
+        justify-content: space-between;
     }
 </style>
